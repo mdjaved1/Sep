@@ -1,0 +1,1 @@
+Classified each method with the number of members in it depending on what it was asking 
