@@ -6,24 +6,39 @@ class Line
 
   def initialize
     self.members = []
+    
   end
 
   def join(person)
+    members << person
   end
 
   def leave(person)
+    members.delete(person)
   end
 
   def front
+    members.first
   end
 
   def middle
+    median = 0
+    if members.size / 2 == 1
+      median = members.size / 2
+    else
+      median = (members.size / 2).round
+    end
+    answer = members.values_at(median)
+     answer.join
+    
   end
 
   def back
+    members.last
   end
 
   def search(person)
+    return person if members.include?(person)
   end
 
   private
