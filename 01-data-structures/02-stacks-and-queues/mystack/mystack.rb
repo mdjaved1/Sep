@@ -9,19 +9,17 @@ class MyStack
   def push(item)
     
    @stack.unshift(item)
-   self.top = @stack[0]
+   self.top = @stack.first
   end
 
   def pop
-    self.top = @stack[1]
-    @stack.shift
+    newItem = self.top
+    @stack.delete(self.top)
+    self.top = @stack.last
+    newItem
   end
 
   def empty?
-    if @stack.empty?
-      return true
-    else
-      return false
-    end
+    @stack.empty?
   end
 end
