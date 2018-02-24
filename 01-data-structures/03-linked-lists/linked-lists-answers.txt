@@ -1,0 +1,13 @@
+1. Spatial locality is to retreive an entire range of data locations from the ram once instead of retrieiving it once , the reason it saves time is because computers save time by reduciung the number of times they must access the ram 
+2. BENCHMARK :
+
+      1.the time it takes to append 10000 items to array is much faster :
+       array  0.000000   0.000000   0.000000 (  0.000014)
+       linkedlist 0.010000   0.000000   0.010000 (  0.003705)
+      2.  array is faster 
+       array 0.000000   0.000000   0.000000 (  0.000005)
+       linked list 0.000000   0.000000   0.000000 (  0.000008)
+      3. array is faster 
+        array 0.000000   0.000000   0.000000 (  0.000011)
+        linked list 0.000000   0.000000   0.000000 (  0.000012)
+ 
