@@ -35,7 +35,7 @@ class LinkedList
     
     node = @head 
     while node != nil 
-      p "#{node}"
+      puts "#{node.data}"
       node = node.next
     end
   end
