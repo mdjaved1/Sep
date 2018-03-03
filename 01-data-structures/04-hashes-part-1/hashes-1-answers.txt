@@ -1,0 +1,1 @@
+Doubling the size in an array maybe ok for smaller arrays but as arrays can get pretty huge the amount of power and memory needed would be too much 
