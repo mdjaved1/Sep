@@ -58,7 +58,7 @@ class SeparateChaining
 
   # Calculate the current load factor
   def load_factor
-  @count 
+    @count.fdiv(size)
   end
 
   # Simple method to return the number of items in the hash
@@ -85,3 +85,14 @@ class SeparateChaining
     @items = arr
   end
 end
+
+
+ def print_hash 
+    iter  = (0..size)
+    iter.each do |ele|
+      if @items[ele] != nil 
+        puts "index is #{ele} , key is #{@items[ele].key} , value of the key is #{@items[ele].value}"
+      end
+      puts "load factor is #{load_factor}"
+    end
+ end
