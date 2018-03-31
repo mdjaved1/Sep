@@ -41,33 +41,31 @@ class BinarySearchTree
   
   
   def delete(root, data)
-    node = find(root , data)
-    if !node.nil?
-        remove(node)
+    if root.title == data
+      return remove(root)
+    end
+    if !root.left.nil?
+      root.left = delete(root.left, data)
+    end
+    if !root.right.nil?
+      root.right = delete(root.right, data)
     end
   end
   
   def remove(node)
-    
     if !node.left.nil? && node.right.nil?
-      puts " about to set node left "
-      node = node.left
-      puts "node left set "
+      return node.left
     elsif node.left.nil? && !node.right.nil?
-      node = node.right
-      puts" node right is not nil "
+      return node.right
     elsif node.left.nil? && node.right.nil?
-      puts "checking for nil "
-      node = nil 
       return nil 
     else
-      node = delete_node_with_two_children(node)
-      puts"node with two child deleted "
+      return delete_node_with_two_children(node)
     end
-    node
   end
   
   def delete_node_with_two_children(node)
+    puts "reaching del two "
     min_node = find_min_node(node.right)
     replace_value(min_node, node)
     remove_min_node(min_node)
@@ -75,20 +73,23 @@ class BinarySearchTree
   
   def find_min_node(node)
     if node.left.nil?
+      puts "reaching find_min"
       min_node = node
-      puts" min node found "
       return min_node
     else
+      puts "reaching else for find min "
       find_min_node(node.left)
     end
   end
   
   def replace_value(min_node,node)
+    puts "reaching replace value "
     node.title = min_node.title
     node.rating = min_node.rating
   end
   
   def remove_min_node(min_node)
+    puts "reaching remove min node "
     min_node = nil 
   end
 
