@@ -2,6 +2,7 @@ require_relative 'node'
 
 class MinBinaryHeap
   attr_accessor :root
+  attr_accessor :items
   
   def initialize
      @items = []
