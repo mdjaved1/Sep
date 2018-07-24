@@ -19,7 +19,7 @@ class MinBinaryHeap
     parent = (i / 2)
     if i == 1
       return
-    elsif @items[parent] <= @items[i]
+    elsif @items[parent].rating <= @items[i].rating
       return 
     else
       switch(i , parent)
@@ -38,7 +38,7 @@ class MinBinaryHeap
     leftchild = @items[child + 1]
     if sec < leftchild  && rightchild < leftchild
       child += 1
-    elsif @items[i] <= @items[child]
+    elsif @items[i].rating <= @items[child].rating
       return 
     end
     switch(i, child)
@@ -47,9 +47,8 @@ class MinBinaryHeap
   
   
   def switch(ele1 , ele2)
-    temp = @items[ele1]
-    @items[ele1] = @items[ele2]
-    @items[ele2] = temp 
+    @items[ele1]  , @items[ele2] = @items[ele2] , @items[ele1]
+    
   end
   
   
@@ -68,18 +67,22 @@ class MinBinaryHeap
   def delete(node)
     i = find_index(node)
     if node.nil?
+      puts "working till nil "
       return nil 
     else
-      swap(i , (@items.size - 1 ))
+      puts "working till switch i is #{i}"
+      switch(i , (@items.size - 1 ))
+      puts"switch happened i is now #{i} and array size is #{@items.size}"
       @items.pop
+      puts "item popped item size is now #{@items.size} and the array is #{@items}"
       checkdown(i)
     end
   end
   
   def find_index(node)
     i = 0 
-    @items.each do |ele|
-      if item.title == node 
+    @items.each do |ele| 
+      if ele.title == node 
         return 
       else
         i += 1
