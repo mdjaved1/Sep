@@ -1,0 +1,27 @@
+
+  Def work(weather , time)
+    IF Weather is equal to  "Sunny" AND time IS EQUAL to not late 
+      take bike to work
+    Else if Weather IS EQUAL to Rain AND time IS EQUAL to late 
+      take car to work  
+    Else 
+      take bus  
+    ENDIF
+  END
+  
+  Def Dressing(weather)
+    CASE weather OF
+      Cold  : Dress warm  
+      Hot : Dress light 
+      Rain : Put on rain coat 
+      Windy : put on wind breaker 
+    ENDCASE
+  end
+  
+  Def Food
+    IF not full THEN 
+      While Hungry 
+      Eat food till full 
+      ENDWHILE 
+    ENDIF
+  end
