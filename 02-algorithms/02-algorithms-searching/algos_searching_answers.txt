@@ -1,0 +1,10 @@
+1. given aphabetically sorted collection it would take 7 iterations  to find g 
+2. it would take 3 from the mid point for binary search 
+
+3. fib(10) would be fib(9) + fib(8) which is 34 + 21 = 55 
+   fib(11) would be fib(10) + fib(9) which is 55 + 34 = 89
+   fib(12) would be fib(11) + fib(10) which is 89 + 55 = 144
+   
+4. given an unsorted collection of million items it would be better to use linear search as there is no given order and  searching the mid to high will not be effective as if you dont find it youll need to go through low to mid anyways 
+5. given a sorted collection it would be better to use binary search as you know where the item is if its in the low to mid you search that instead of searching the whole thing . 
+
