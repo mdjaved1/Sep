@@ -5,13 +5,13 @@ def bucket_sort(array, bucket_size = array.length - 2)
     array.each do |ele|
         j = (ele/ divider)
         if buckets[j] == nil; 
-            buckets[j] = ele
+            buckets[j] = [ele]
         else
             buckets[j] << ele
         end
     end
-    buckets.map! do |ele| 
-       insertion_sort(ele)
+    buckets.map! do |element|
+      insertion_sort(element)
     end
     return buckets.flatten.compact
 end
@@ -40,3 +40,5 @@ end
 
    sorted_collection
  end
+
+

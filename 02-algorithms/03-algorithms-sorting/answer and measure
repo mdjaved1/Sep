@@ -1,0 +1,1 @@
+Bucket sort took the longest becasue of creating multiple arrays the longer the list the longer bucket sort will take because its creating multiple buckets and sorting them indivudualy , quick sort is second and heapsort is the quickest depending on the size of the array 

@@ -5,11 +5,12 @@ require_relative 'bucket-sort'
 
 
 
-array1 = Array.new(1000){rand 2.1000}
-
-puts Benchmark.measure {  heap_sort(array1) }
-puts Benchmark.measure {  quicksort(array1) }
-puts Benchmark.measure {  bucket_sort(array1) }
+array = [1,3,2,8,4,9,100,55,88,44,46,87,99,67]
+    
 
 
- #Quick Sort is the fastest way to sort things , bucket sort will take too much time as there will be buckts that you are running insertion sort on !. 
+puts Benchmark.measure {  heap_sort(array) }
+puts Benchmark.measure {  quicksort(array) }
+puts Benchmark.measure {  bucket_sort(array) }
+
+
