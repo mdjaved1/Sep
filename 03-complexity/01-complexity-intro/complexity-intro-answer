@@ -1,0 +1,17 @@
+Answer 1 . So my analogy is a company years ago wanted to transfer data to a building a kilometer away and wanted to see whats the fastest way internet transfer or attaching usbs to messenger pigeons and having them fly to the other building in this analogy O(1)is represented by the pigoens no matter what the size the pigeons will get there in the same amount of time but internet transfer which is represented by O(2^n) will take longer as the size increases . 
+
+Answer 2 . the best case scenario for binary search is we find the value on our first run through of our code and its the mid value .
+
+Answer 3 . the worst case scenario is that we find the value we are looking for at the end of the array or right before our mid value .
+
+Answer 4 . the value we are searching for is not the first or the last or the mid or the value before mid value when searching for it its somewhere in between  . 
+
+Answer 6.  It is also infinity .
+
+Answer 7 .  the Big O is O(2^n)
+
+Answer 10 . its O(n)
+
+Answer 11 . its O(1)
+
+Answer 12 . its O(Log n)
