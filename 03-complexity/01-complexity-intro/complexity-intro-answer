@@ -10,7 +10,7 @@ Answer 6.  It is also infinity .
 
 Answer 7 .  the Big O is O(2^n)
 
-Answer 10 . its O(n)
+Answer 10 . its O(log n)
 
 Answer 11 . its O(1)
 
