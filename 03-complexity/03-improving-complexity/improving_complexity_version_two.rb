@@ -1,5 +1,5 @@
  def complexity_written_ruby(*arrays)
-   combined_array = [arrays.flatten!]
+   combined_array = arrays.flatten!
    return merge_sort(combined_array) 
  end
  
