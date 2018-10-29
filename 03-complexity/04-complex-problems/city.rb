@@ -1,15 +1,9 @@
 class City 
     attr_accessor :name
-    attr_accessor :neighbours
-    attr_accessor :visited
-    attr_accessor :distance
-    
-    def initialize(name , distance)
+    attr_accessor :long_lat
+   
+    def initialize(name ,long_lat)
        @name = name
-       @distance = distance
-       @visited = false
-       @neighbours = Array.new()
+       @long_lat = long_lat
     end
 end
-
-
